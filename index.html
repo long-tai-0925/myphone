@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    手機
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://links.longtai.site/css/style.css">
+  <link rel="stylesheet" href="https://links.longtai.site/css/About_me.css">
+  <link rel="stylesheet" href="https://links.longtai.site/css/Music.css">
+  <link rel="stylesheet" href="https://links.longtai.site/css/Calendar.css">
+  <link rel="stylesheet" href="https://links.longtai.site/css/Other.css">
+  <link rel="stylesheet" href="https://links.longtai.site/css/Experience.css">
+</head>
+<body>
+  <button class="toggle-dark-mode" onclick="toggleDarkMode()">
+    深色模式
+  </button>
+  <div class="desktop">
+    <!-- About Icon -->
+    <div class="icon" onclick="openFolder('About')">
+      <span>
+        About
+      </span>
+    </div>
+
+    <!-- Contact Icon -->
+    <div class="icon" onclick="openFolder('Contact')">
+      <span>
+        Contact
+      </span>
+    </div>
+
+    <!-- Portfolio Icon -->
+    <div class="icon" onclick="openFolder('Portfolio')">
+      <span>
+        Portfolio
+      </span>
+    </div>
+
+    <!-- Advise Icon -->
+    <div class="icon" onclick="openFolder('Advise')">
+      <span>
+        Advise
+      </span>
+    </div>
+
+    <!-- About Folder -->
+    <div class="backdrop" id="backdrop" onclick="closeFolder()">
+      &nbsp;
+      <div class="folder-view" id="About">
+        <div class="close" onclick="closeFolder()">
+          ×
+        </div>
+        <div class="header">
+          About
+        </div>
+        <span>
+          Hi! I'm LongTia Jiang, from Taiwan.</br>
+          This is my website, there have everything (maybe).</br>
+          Now is 17 years old, I’ll be 18 in one year.</br>
+          I study at National Taichung University of Science and Technology.</br>
+          Have a nice day :)
+        </span>
+        <div class="header">
+          Experienced
+        </div>
+        <div id="Experience">
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/-1.webp">
+            <span class="img-name">國立臺中科技大學 資訊工程科科學會第五屆 行銷股股員</span>
+          </div>
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/0.webp">
+            <span class="img-name">中部高中電資社團聯合會議第四屆 臨時工人</span>
+          </div>
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/1.webp">
+            <span class="img-name">1014 民主共和國 - 管理員</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/2.webp">
+            <span class="img-name">亞洲國際多元學校 - 副服主</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/3.webp">
+            <span class="img-name">勞贖幫 - Discord Bot開發者</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/4.webp">
+            <span class="img-name">Cenet - 實習ing</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/5.webp">
+            <span class="img-name">CloudXact - 建築師、網頁工程師、Discord Bot 工程師</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/6.webp">
+            <span class="img-name">FreeServer Plus - 擁有者</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/7.webp">
+            <span class="img-name">國際貓咪聯盟會 - 管理員</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/8.webp">
+            <span class="img-name">Neko - 客服人員</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/9.webp">
+            <span class="img-name">NewLand - 網頁工程師、Discord Bot 工程師</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/10.webp">
+            <span class="img-name">新焰工作室 - 網頁工程師、Discord Bot 工程師</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/11.webp">
+            <span class="img-name">NUTC on Discord - 擁有者</span>
+          </div>
+          
+          <div class="logo-item">
+            <img class="img" alt="1111" src="https://links.longtai.site/Experience/12.webp">
+            <span class="img-name">SHD Cloud - 技術組</span>
+          </div>
+        </div>
+        <!--
+        <h5>
+          ◆&nbsp;國立臺中科技大學 資訊工程科科學會第五屆 行銷股股員</br>
+          ◆&nbsp;中部高中電資社團聯合會議第四屆 臨時工人</br>
+          ◆&nbsp;1014 民主共和國 - 管理員</br>
+          ◆&nbsp;亞洲國際多元學校 - 副服主</br>
+          ◆&nbsp;勞贖幫 - Discord Bot開發者</br>
+          ◆&nbsp;Cenet - 實習ing</br>
+          ◆&nbsp;CloudXact - 建築師、網頁工程師、Discord Bot 工程師</br>
+          ◆&nbsp;FreeServer Plus - 擁有者</br>
+          ◆&nbsp;國際貓咪聯盟會 - 管理員</br>
+          ◆&nbsp;Neko - 客服人員</br>
+          ◆&nbsp;NewLand - 網頁工程師、Discord Bot 工程師</br>
+          ◆&nbsp;新焰工作室 - 網頁工程師、Discord Bot 工程師</br>
+          ◆&nbsp;NUTC on Discord - 擁有者</br>
+          ◆&nbsp;SHD Cloud - 技術組</br>
+        </h5>
+        -->
+      </div>
+    </div>
+
+    <!-- Contact Folder -->
+    <div class="backdrop" id="backdrop" onclick="closeFolder()">
+      &nbsp;
+      <div class="folder-view" id="Contact">
+        <div class="close" onclick="closeFolder()">
+          ×
+        </div>
+        <div class="header">
+          Contact
+        </div>
+        <div class="icons">
+          <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=100016625954401">
+              <img src="/img/Facebook.png" alt="Facebook Icon">
+              <span>
+                Facebook
+              </span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com/jiang.0925/">
+              <img src="/img/Instagram.png" alt="Instagram Icon">
+              <span>
+                Instagram
+              </span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://line.me/ti/p/cwA85fKSyV">
+              <img src="/img/Line.png" alt="Line Icon">
+              <span>
+                Line
+              </span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="mailto:me@longtai.org">
+              <img src="/img/Email.png" alt="Email Icon">
+              <span>
+                Mail
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Portfolio Folder -->
+    <div class="backdrop" id="backdrop" onclick="closeFolder()">
+      &nbsp;
+      <div class="folder-view" id="Portfolio">
+        <div class="close" onclick="closeFolder()">
+          ×
+        </div>
+        <div class="header">
+          Website
+        </div>
+        <div class="icons">
+          <div class="icon">
+            <a href="https://longtai.site">
+              <img src="/img/Blog.jpg" alt="Blog Icon">
+              <span>
+                Blog
+              </span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://longtai.site">
+              <img src="/img/Links_List.jpg" alt="Links List Icon">
+              <span>
+                LinksList
+              </span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://card.longtai.site">
+              <img src="/img/Card.png" alt="Card Icon">
+              <span>
+                Card
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="header"></br>
+          Discord Bot
+        </div>
+        <div class="icons">
+          <div class="icon">
+            <a href="https://github.com/long-tai-0925/NUTC-on-Discord-Bot">
+              <img src="https://cdn.discordapp.com/app-icons/1172521109493657630/8549c9cc74d81823ebe8f13b1020537c.png" alt="Blog Icon">
+              <span>
+                Blog
+              </span>
+            </a>
+          </div>
+      </div>
+    </div>
+
+    <!-- Advise Folder -->
+    <div class="backdrop" id="backdrop" onclick="closeFolder()">
+      &nbsp;
+      <div class="folder-view" id="Advise">
+        <div class="close" onclick="closeFolder()">
+          ×
+        </div>
+        <div class="header">
+          Advise
+        </div>
+        <div class="icons">
+          <div class="icon">
+            <a href="https://drive.google.com/drive/u/2/folders/1y6Ik_2SWt66hKdjYajaHBt7J890S2Wqz">
+              <img src="/img/Google_Drive.svg" alt="Google Drive Icon">
+              <span>
+                Drive
+              </span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://longtai0925.notion.site/">
+              <img src="/img/Notion.jpg" alt="Notion Icon">
+              <span>
+                Notion
+              </span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://nafstore.net/">
+              <img src="https://nafstore.net/wp-content/uploads/cropped-NAFStore-logo-1-192x192.png" alt="NAF Icon">
+              <span>
+                NAF
+              </span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://stats.uptimerobot.com/xj6WAimRYP">
+              <img src="/img/Uptime_Robot.png" alt="Uptime Robot Icon">
+              <span>
+                Uptime
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

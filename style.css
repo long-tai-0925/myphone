@@ -1,0 +1,156 @@
+/* 全局樣式 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 桌面容器 */
+.desktop {
+  width: 90vw;
+  max-width: 400px;
+  height: 90vh;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* 圖標樣式 */
+.icon {
+  display: flex; /* 使用彈性布局 */
+  flex-direction: column; /* 使子元素垂直排列 */
+  align-items: center; /* 子元素水平居中 */
+  justify-content: flex-end; /* 子元素靠下對齊 */
+  background-color: #e0e0e0; /* 圖標背景顏色為淺灰色 */
+  border-radius: 10px; /* 圖標圓角 */
+  padding: 10px; /* 圖標內邊距 */
+  text-align: center; /* 文字居中對齊 */
+  cursor: pointer; /* 滑鼠移上時顯示手勢圖標 */
+  user-select: none; /* 禁止選中內容 */
+  transition: background-color 0.3s ease, color 0.3s ease; /* 添加背景色與文字顏色的過渡效果 */
+  height: 65px; /* 設定圖標的固定高度 */
+  margin-top: auto;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.icon span {
+  display: block; /* 使 span 為塊級元素 */
+  margin-top: auto; /* 讓文字靠圖標底部對齊 */
+  margin-bottom: auto; /* 讓文字靠圖標頂部對齊 */
+  font-size: 14px; /* 設定文字大小 */
+  color: #333; /* 文字顏色為深灰色 */
+}
+
+/* 資料夾視圖樣式 */
+.folder-view {
+  position: absolute;
+  bottom: 10px;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 70%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.folder-view.open {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.folder-view .header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.folder-view .icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.folder-view .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+}
+
+/* 深色模式樣式 */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.desktop.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.icon.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.folder-view.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.toggle-dark-mode {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-dark-mode.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.icon.dark-mode span {
+  color: #ffffff;
+}
+
+.backdrop {
+  margin-top: auto;
+}
